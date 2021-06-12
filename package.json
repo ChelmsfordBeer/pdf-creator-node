@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/hajareshyam/pdf-creator-node",
+  "homepage": "https://github.com/chelmsfordbeer/pdf-creator-node",
   "keywords": [
     "pdf",
     "pdf",
@@ -43,7 +43,7 @@
     "node",
     "Shyam Hajare"
   ],
-  "author": "Shyam Hajare",
+  "author": "Shyam Hajare - Maintained by Chelmsford Beer & Cider Festivals",
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.7.7",
