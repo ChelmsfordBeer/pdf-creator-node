@@ -1,5 +1,5 @@
 {
-  "name": "pdf-creator-node",
+  "name": "cbcf-pdf-creator-node",
   "version": "2.2.3",
   "description": "node pdf creator",
   "main": "index.js",
