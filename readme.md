@@ -2,7 +2,7 @@
 
 - Step 1 - install the pdf creator package using the following command
 
-  `$ npm i pdf-creator-node --save`
+  `$ npm i @chelmsfordbeer/pdf-creator-node --save`
 
   > --save flag adds package name to package.json file.
 
@@ -10,11 +10,11 @@
 
   ```javascript
   //Required package
-  var pdf = require("pdf-creator-node");
-  var fs = require("fs");
+  const pdf = require("@chelmsfordbeer/pdf-creator-node");
+  const fs = require("fs");
 
   // Read HTML Template
-  var html = fs.readFileSync("template.html", "utf8");
+  const html = fs.readFileSync("template.html", "utf8");
   ```
 
 - Step 3 - Create your HTML Template
@@ -52,7 +52,7 @@
   > "orientation": "portrait", // portrait or landscape
 
     ```javascript
-        var options = {
+        const options = {
             format: "A3",
             orientation: "portrait",
             border: "10mm",
@@ -75,7 +75,7 @@
 - Step 5 - Provide HTML, user data and PDF path for output
 
   ```javascript
-  var users = [
+  const users = [
     {
       name: "Shyam",
       age: "26",
@@ -89,7 +89,8 @@
       age: "26",
     },
   ];
-  var document = {
+
+  const document = {
     html: html,
     data: {
       users: users,
@@ -102,8 +103,7 @@
 - Step 6 - After setting all parameters, just pass document and options to `pdf.create` method.
 
   ```javascript
-  pdf
-    .create(document, options)
+  pdf.create(document, options)
     .then((res) => {
       console.log(res);
     })
