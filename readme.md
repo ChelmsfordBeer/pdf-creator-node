@@ -94,10 +94,9 @@
     data: {
       users: users,
     },
-    path: "./output.pdf",
-    type: "",
+    path: "./output.pdf", // Output a file in the current directory
+    type: "" // Remove path and set type to "buffer" or "stream" if needed.
   };
-  // By default a file is created but you could switch between Buffer and Streams by using "buffer" or "stream" respectively.
   ```
 
 - Step 6 - After setting all parameters, just pass document and options to `pdf.create` method.
