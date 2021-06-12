@@ -1,18 +1,18 @@
-var pdf = require("pdf-creator-node");
-// var pdf = require("../index");
-var fs = require("fs");
-var path = require("path");
+/* jshint esversion:6 */
+const pdf = require("@chelmsfordbeer/pdf-creator-node");
+// const pdf = require("../index");
+const fs = require("fs");
+const path = require("path");
 // Read HTML Template
-var html = fs.readFileSync(path.join(__dirname, "./template.html"), "utf8");
+const html = fs.readFileSync(path.join(__dirname, "./template.html"), "utf8");
 
-var options = {
+const options = {
   format: "A3",
   orientation: "portrait",
   border: "10mm",
 };
 
-var users = [
-  {
+const users = [{
     name: "Shyam",
     age: "26",
   },
@@ -25,7 +25,8 @@ var users = [
     age: "26",
   },
 ];
-var document = {
+
+const document = {
   html: html,
   data: {
     users: users,
@@ -35,8 +36,7 @@ var document = {
 };
 
 console.log(document);
-pdf
-  .create(document, options)
+pdf.create(document, options)
   .then((res) => {
     console.log(res);
   })

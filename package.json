@@ -1,5 +1,5 @@
 {
-  "name": "cbcf-pdf-creator-node",
+  "name": "@chelmsfordbeer/pdf-creator-node",
   "version": "2.2.3",
   "description": "node pdf creator",
   "main": "index.js",
@@ -48,5 +48,15 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "html-pdf": "^3.0.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChelmsfordBeer/pdf-creator-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChelmsfordBeer/pdf-creator-node/issues"
   }
 }
